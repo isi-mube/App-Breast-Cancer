@@ -16,6 +16,11 @@ df.columns = [column.lower().replace(" ", "_") for column in df.columns]
 selected_features_model = ['worst_concave_points', 'worst_perimeter', 'smoothness_error', 'worst_area', 'mean_concave_points']
 
 def about():
+    # Centering the image
+    col1, col2, col3 = st.columns([1,2,1])
+    with col2:  # middle column
+        st.image("images/cell_segmentation.jpg", width=400) # logo
+        
     st.write("""
     ### The Breast Cancer Wisconsin Dataset
     
@@ -26,13 +31,13 @@ def about():
     - The dataset consists of 569 instances and 32 attributes. The key attributes include **ID number** and **Diagnosis**: This indicates whether the tumor is benign (B) or malignant (M).
     - The remaining 30 features are computed from the FNA images and describe various characteristics of the cell nuclei present in the images. 
 """)
-    
-    # Centering the image
-    col1, col2, col3 = st.columns([1,2,1])
-    with col2:  # middle column
-        st.image("images/cell_segmentation.jpg", width=400) # logo
 
-    st.write("""
+    # Centering the image
+    col4, col5, col6 = st.columns([1,2,1])
+    with col5:  # middle column
+        st.image("images/yokohama.jpeg", width=400) # logo
+
+        st.write("""
     #### Selected Features and Cytological Terms
     We will focus on five specific features and translate them into their corresponding cytological terms based on the [Yokohama System for Reporting Breast Cytopathology](https://www.xiahepublishing.com/2771-165X/JCTP-2023-00006):
     
@@ -42,19 +47,6 @@ def about():
     - **Increased Nuclear Area (Worst Area)**: Larger nuclear area is often seen in malignant cells as they tend to have larger nuclei.
     - **Nuclear Indentations (Mean Concave Points)**: Refers to the average number of indentations in the nuclear membrane, which can be a sign of malignancy.
     """)
-    # Centering the image
-    col4, col5, col6 = st.columns([1,2,1])
-    with col5:  # middle column
-        st.image("images/yokohama.jpeg", width=400) # logo
-        
-        st.write("")
-    st.write("""
-        - **Marked Nuclear Indentation (Worst Concave Points)**: Refers to the most significant indentations in the nuclear membrane, which is a typical feature in malignant cells.
-        - **Irregular Nuclear Membrane (Worst Perimeter)**: Indicates the irregularity in the shape of the nuclear membrane, often associated with cancerous cells.
-        - **Variability in Nuclear Membrane Smoothness (Smoothness Error)**: Represents the variation in the smoothness of the nuclear membrane, which can indicate abnormal cell growth.
-        - **Increased Nuclear Area (Worst Area)**: Larger nuclear area is often seen in malignant cells as they tend to have larger nuclei.
-        - **Nuclear Indentations (Mean Concave Points)**: Refers to the average number of indentations in the nuclear membrane, which can be a sign of malignancy.
-        """)
 
     st.write("""
     #### Dataset Visualization
