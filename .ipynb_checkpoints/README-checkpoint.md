@@ -1,7 +1,7 @@
-# Breast Cancer Diagnosis App
+# Breast Cancer App
 
 <p align="center">
-  <img src="images/logo.png" alt="Breast Cancer Diagnosis App" width="200">
+  <img src="images/logo.png" alt="Breast Cancer Diagnosis App" width="400">
 </p>
 
 The Breast Cancer Diagnosis App uses Machine Learning to predict whether a breast cancer tumor is malignant or benign based on cytological characteristics. 
@@ -14,7 +14,7 @@ The Breast Cancer Diagnosis App uses Machine Learning to predict whether a breas
 [The Breast Cancer Wisconsin dataset](https://pages.cs.wisc.edu/~olvi/uwmp/cancer.html) is a widely-used dataset in the field of **Machine Learning** and medical research. It originates from the University of [Wisconsin-Madison](https://www.wisc.edu/) and was created by [Dr. William H. Wolberg](https://www.researchgate.net/scientific-contributions/W-H-Wolberg-50985606).
 
 <p align="center">
-  <img src="images/cell_segmentation.jpg" alt="Breast Cancer Diagnosis App" width="400">
+  <img src="images/cell_segmentation.jpg" alt="Breast Cancer Diagnosis App" width="300">
 </p>
     
 The dataset is designed to help **develop predictive models** for **diagnosing** breast cancer based on cytological characteristics of **fine needle aspirate (FNA) cytology** samples from breast masses.
@@ -25,7 +25,7 @@ The dataset is designed to help **develop predictive models** for **diagnosing**
 ## Selected Features
 
 <p align="center">
-  <img src="images/yokohama.jpg" alt="Breast Cancer Diagnosis App" width="400">
+  <img src="images/yokohama.jpeg" alt="Breast Cancer Diagnosis App" width="300">
 </p>
 
 The app focuses on five specific features and translates them into their corresponding cytological terms based on the [Yokohama System for Reporting Breast Cytopathology](https://www.xiahepublishing.com/2771-165X/JCTP-2023-00006):
