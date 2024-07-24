@@ -1,7 +1,7 @@
 # Breast Cancer App
 
 <p align="center">
-  <img src="images/logo.png" alt="Breast Cancer Diagnosis App" width="400">
+  <img src="images/app.png" alt="Breast Cancer Diagnosis App" width="400">
 </p>
 
 The Breast Cancer Diagnosis App uses Machine Learning to predict whether a breast cancer tumor is malignant or benign based on cytological characteristics. 

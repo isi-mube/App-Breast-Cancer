@@ -53,19 +53,22 @@ with tabs[2]:
     cm = confusion_matrix(y_test, predictions)
     
     fig4 = go.Figure(data=go.Heatmap(
-    z=cm,
-    x=['Predicted Negative', 'Predicted Positive'],
-    y=['Actual Negative', 'Actual Positive'],
-    colorscale='Blues',
-    text=cm,
-    texttemplate="%{text}",
-    hoverinfo='skip'
+        z=cm,
+        x=['Predicted Negative', 'Predicted Positive'],
+        y=['Actual Negative', 'Actual Positive'],
+        colorscale='Blues',
+        text=cm,
+        texttemplate="%{text}",
+        hoverinfo='skip'
     ))
+    
     fig4.update_layout(
-    title='Confusion Matrix',
-    xaxis_title='Predicted Label',
-    yaxis_title='True Label'
+        title='Confusion Matrix',
+        xaxis_title='Predicted Label',
+        yaxis_title='True Label',
+        yaxis=dict(autorange='reversed')  # Invertir el orden del eje y
     )
+
     st.plotly_chart(fig4)
     
     # ROC Curve
