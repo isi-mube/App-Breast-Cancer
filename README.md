@@ -1,17 +1,20 @@
-# Overview
+<p align="center">
+  <img src="images/benign.png" alt="Breast Cancer Diagnosis App">
+</p>
 
-The Breast Cancer Diagnosis App leverages Machine Learning models to predict whether a breast cancer tumor is malignant or benign based on cytological characteristics. 
+The Breast Cancer Diagnosis App uses Machine Learning to predict whether a breast cancer tumor is malignant or benign based on cytological characteristics. 
 
-You can access the app using the following link: [Breast Cancer Diagnosis App](https://cancer-diagnose.streamlit.app/)
+- You can access the app [here](https://cancer-diagnose.streamlit.app/)
+- This app was made for a webinar and a workshop about Streamlit
 
 ## Dataset
 
 [The Breast Cancer Wisconsin dataset](https://pages.cs.wisc.edu/~olvi/uwmp/cancer.html) is a widely-used dataset in the field of **Machine Learning** and medical research. It originates from the University of [Wisconsin-Madison](https://www.wisc.edu/) and was created by [Dr. William H. Wolberg](https://www.researchgate.net/scientific-contributions/W-H-Wolberg-50985606). 
     
-    The dataset is designed to help **develop predictive models** for **diagnosing** breast cancer based on cytological characteristics of **fine needle aspirate (FNA) cytology** samples from breast masses.
-    
-    - The dataset consists of 569 instances and 32 attributes. The key attributes include **ID number** and **Diagnosis**: This indicates whether the tumor is benign (B) or malignant (M).
-    - The remaining 30 features are computed from the FNA images and describe various characteristics of the cell nuclei present in the images. 
+The dataset is designed to help **develop predictive models** for **diagnosing** breast cancer based on cytological characteristics of **fine needle aspirate (FNA) cytology** samples from breast masses.
+
+- The dataset consists of 569 instances and 32 attributes. The key attributes include **ID number** and **Diagnosis**: This indicates whether the tumor is benign (B) or malignant (M).
+- The remaining 30 features are computed from the FNA images and describe various characteristics of the cell nuclei present in the images. 
 
 ## Selected Features
 
